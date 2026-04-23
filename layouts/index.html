@@ -1,0 +1,16 @@
+{{ define "main" -}}
+<div class="post about-homepage">
+    {{ with .Site.GetPage "/about" }}
+        <h1 class="post-title">{{ .Title }}</h1>
+        {{ .Content }}
+    {{ end }}
+</div>
+{{- end }}
+
+{{ define "sidebar" }}
+    {{ with .Site.GetPage "/about" }}
+        {{ if and (not .Params.hideToc) (not $.Site.Params.hideToc) }}
+            {{ partial "table_of_contents.html" . }}
+        {{ end }}
+    {{ end }}
+{{ end }}

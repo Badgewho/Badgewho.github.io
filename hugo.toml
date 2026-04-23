@@ -1,0 +1,31 @@
+baseURL = "/"
+languageCode = "zh-cn"
+title = "王柏智 | About Me"
+theme = "poison"
+defaultContentLanguage = "zh-cn"
+pluralizelisttitles = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  brand = "王柏智"
+  brand_image = "/images/profile.jpg"
+  description = "Always try to be nice, but never fail to be kind. And love is always wise. Hate is always foolish..."
+  dark_mode = true
+  front_page_content = ["about"]
+  hideToc = false
+
+  email_url = "mailto:wbz@mail.ustc.edu.cn"
+  github_url = "https://github.com/Badgewho"
+  google_scholar_url = "https://scholar.google.com/citations?hl=zh-CN&user=AjsvAy8AAAAJ"
+  xiaohongshu_url = "https://xhslink.com/m/93BtZ7NFHCz"
+  douyin_url = "https://v.douyin.com/bnN7RFifrj8/"
+  bilibili_url = "https://space.bilibili.com/436001051?spm_id_from=333.1007.0.0"
+
+  [[params.menu]]
+    Name = "邮箱联系"
+    URL = "mailto:wbz@mail.ustc.edu.cn"
+    External = true
